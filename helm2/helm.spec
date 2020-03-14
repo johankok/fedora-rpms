@@ -30,7 +30,7 @@ install -p -m 644 linux-amd64/README.md %{buildroot}/%{_docdir}/%{name}/
 %{_bindir}/tiller
 
 %changelog
-* Tue Feb 18 2019 Nicolas Steinmetz <contact@cerenit.fr> - 2.16.3-1
+* Tue Feb 18 2020 Nicolas Steinmetz <contact@cerenit.fr> - 2.16.3-1
 - Upgrade to 2.16.3
 
 * Thu Nov 14 2019 Nicolas Steinmetz <contact@cerenit.fr> - 2.16.1-1

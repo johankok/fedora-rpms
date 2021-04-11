@@ -1,5 +1,5 @@
 Name:       helm
-Version:    2.16.3
+Version:    3.5.3
 Release:    1%{?dist}
 Summary:    The Kubernetes Package Manager
 
@@ -19,7 +19,6 @@ mkdir -p %{buildroot}/%{_docdir}/%{name}
 
 tar xzf %{_sourcedir}/helm-v%{version}-linux-amd64.tar.gz
 install -p -m 755 linux-amd64/helm %{buildroot}/%{_bindir}
-install -p -m 755 linux-amd64/tiller %{buildroot}/%{_bindir}
 install -p -m 644 linux-amd64/LICENSE %{buildroot}/%{_datadir}/licenses/%{name}/
 install -p -m 644 linux-amd64/README.md %{buildroot}/%{_docdir}/%{name}/
 
@@ -27,9 +26,11 @@ install -p -m 644 linux-amd64/README.md %{buildroot}/%{_docdir}/%{name}/
 %license LICENSE
 %doc README.md
 %{_bindir}/helm
-%{_bindir}/tiller
 
 %changelog
+* Sun Apr 11 2021 Johan Kok <johan@fedoraproject.org> - 3.5.3-1
+- Upgrade to 3.5.3
+
 * Tue Feb 18 2020 Nicolas Steinmetz <contact@cerenit.fr> - 2.16.3-1
 - Upgrade to 2.16.3
 

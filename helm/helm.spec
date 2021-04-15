@@ -1,6 +1,6 @@
 Name:       helm
-Version:    3.5.3
-Release:    2%{?dist}
+Version:    3.5.4
+Release:    1%{?dist}
 Summary:    The Kubernetes Package Manager
 
 License:    ASL 2.0
@@ -35,6 +35,9 @@ install -p -m 644 linux-amd64/README.md %{buildroot}/%{_docdir}/%{name}/
 %{_bindir}/helm
 
 %changelog
+* Thu Apr 15 2021 Johan Kok <johan@fedoraproject.org> - 3.5.4-1
+- Upgrade to 3.5.4
+
 * Sun Apr 11 2021 Johan Kok <johan@fedoraproject.org> - 3.5.3-2
 - Added gpgverify
 

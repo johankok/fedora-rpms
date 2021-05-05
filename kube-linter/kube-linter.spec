@@ -1,5 +1,5 @@
 Name:       kube-linter
-Version:    0.1.6
+Version:    0.2.1
 Release:    1%{?dist}
 Summary:    Static analysis tool that checks Kubernetes YAML files and Helm charts
 
@@ -20,5 +20,8 @@ install -p -m 755 kube-linter %{buildroot}/%{_bindir}
 %{_bindir}/kube-linter
 
 %changelog
+* Wed May 05 2021 Johan Kok <johan@fedoraproject.org> - 0.2.1-1
+- Bumped to version 0.2.1
+
 * Sun Apr 11 2021 Johan Kok <johan@fedoraproject.org> - 0.1.6-1
 - Initial spec file

@@ -13,8 +13,6 @@ Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
 %prep
 %setup -q -T -c
 
-%build
-
 %install
 mkdir -p %{buildroot}/%{_bindir}
 %{__install} -m 755 %{SOURCE0} %{buildroot}/%{_bindir}/%{name}

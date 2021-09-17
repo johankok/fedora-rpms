@@ -1,5 +1,5 @@
 Name:       helm
-Version:    3.6.3
+Version:    3.7.0
 Release:    1%{?dist}
 Summary:    The Kubernetes Package Manager
 
@@ -35,6 +35,9 @@ install -p -m 644 linux-amd64/README.md %{buildroot}/%{_docdir}/%{name}/
 %{_bindir}/helm
 
 %changelog
+* Fri Sep 17 2021 Johan Kok <johan@fedoraproject.org> - 3.7.0-1
+- Bumped to 3.7.0
+
 * Fri Jul 16 2021 Johan Kok <johan@fedoraproject.org> - 3.6.3-1
 - Bumped to 3.6.3
 

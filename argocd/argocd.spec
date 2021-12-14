@@ -1,5 +1,5 @@
 Name:       argocd
-Version:    2.1.7
+Version:    2.1.8
 Release:    1%{?dist}
 Summary:    Declarative continuous deployment for Kubernetes
 
@@ -21,6 +21,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Tue Dec 14 2021 Johan Kok <johan@fedoraproject.org> - 2.1.8-1
+- Bumped to 2.1.8
+
 * Fri Dec 10 2021 Johan Kok <johan@fedoraproject.org> - 2.1.7-1
 - Bumped to 2.1.7
 

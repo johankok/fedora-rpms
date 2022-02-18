@@ -1,5 +1,5 @@
 Name:       helm
-Version:    3.7.2
+Version:    3.8.0
 Release:    1%{?dist}
 Summary:    The Kubernetes Package Manager
 
@@ -38,6 +38,9 @@ install -p -m 644 README.md %{buildroot}/%{_docdir}/%{name}/
 %{_bindir}/helm
 
 %changelog
+* Fri Feb 18 2022 Johan Kok <johan@fedoraproject.org> - 3.8.0-1
+- Bumped to 3.8.0
+
 * Fri Dec 10 2021 Johan Kok <johan@fedoraproject.org> - 3.7.2-1
 - Bumped to 3.7.2
 

@@ -1,5 +1,5 @@
 Name:       kube-linter
-Version:    0.3.0
+Version:    0.4.0
 Release:    1%{?dist}
 Summary:    Static analysis tool that checks Kubernetes YAML files and Helm charts
 
@@ -8,18 +8,24 @@ URL:        https://github.com/stackrox/kube-linter
 Source0:    https://github.com/stackrox/kube-linter/releases/download/%{version}/kube-linter-linux.tar.gz
 
 %description
-KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices. 
+KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.
+
+%prep
+%setup -q -c -T
+tar xzf %{SOURCE0}
 
 %install
 mkdir -p %{buildroot}/%{_bindir}
 
-tar xzf %{_sourcedir}/kube-linter-linux.tar.gz
 install -p -m 755 kube-linter %{buildroot}/%{_bindir}
 
 %files
 %{_bindir}/kube-linter
 
 %changelog
+* Sat Jul 23 2022 Johan Kok <johan@fedoraproject.org> - 0.4.0-1
+- Bumped to 0.4.0
+
 * Fri May 20 2022 Johan Kok <johan@fedoraproject.org> - 0.3.0-1
 - Bumped to 0.3.0
 

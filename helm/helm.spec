@@ -1,6 +1,6 @@
 Name:       helm
 Version:    3.9.4
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    The Kubernetes Package Manager
 
 License:    ASL 2.0
@@ -25,12 +25,7 @@ tar --strip-components=1 -zxf %{SOURCE0}
 
 %install
 mkdir -p %{buildroot}/%{_bindir}
-mkdir -p %{buildroot}/%{_datadir}/licenses/%{name}
-mkdir -p %{buildroot}/%{_docdir}/%{name}
-
 install -p -m 755 helm %{buildroot}/%{_bindir}
-install -p -m 644 LICENSE %{buildroot}/%{_datadir}/licenses/%{name}/
-install -p -m 644 README.md %{buildroot}/%{_docdir}/%{name}/
 
 %files
 %license LICENSE
@@ -38,6 +33,9 @@ install -p -m 644 README.md %{buildroot}/%{_docdir}/%{name}/
 %{_bindir}/helm
 
 %changelog
+* Fri Aug 26 2022 Johan Kok <johan@fedoraproject.org> - 3.9.4-2
+- Update packaging for README.md and LICENSE
+
 * Fri Aug 26 2022 Johan Kok <johan@fedoraproject.org> - 3.9.4-1
 - Bumped to 3.9.4
 

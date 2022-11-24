@@ -1,11 +1,12 @@
-Name:       yq
-Version:    4.30.4
-Release:    1%{?dist}
-Summary:    A portable command-line YAML, JSON, XML, CSV and properties processor 
+Name:          yq
+Version:       4.30.4
+Release:       1%{?dist}
+Summary:       A portable command-line YAML, JSON, XML, CSV and properties processor 
 
-License:    MIT
-URL:        https://github.com/mikefarah/yq/releases
-Source0:    https://github.com/mikefarah/yq/releases/download/v%{version}/yq_linux_amd64.tar.gz
+License:       MIT
+URL:           https://github.com/mikefarah/yq/releases
+Source0:       https://github.com/mikefarah/yq/releases/download/v%{version}/yq_linux_amd64.tar.gz
+ExclusiveArch: x86_64
 
 %description
 a lightweight and portable command-line YAML, JSON and XML processor. yq uses 

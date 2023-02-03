@@ -6,4 +6,4 @@
 
 ## Usage
 
-You can install the packages after enabling this repository (`dnf copr enable johan/fedora-rpms` or `yum copr enable johan/fedora-rpms`).
+You can install the packages after enabling this repository with `sudo dnf copr enable johan/fedora-rpms`. You will need to have `sudo dnf install dnf-plugins-core` installed first.

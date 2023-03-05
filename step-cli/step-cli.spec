@@ -1,5 +1,5 @@
 Name:          step-cli
-Version:       0.23.2
+Version:       0.23.3
 Release:       1%{?dist}
 Summary:       A zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc 
 
@@ -27,6 +27,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %doc README.md
 
 %changelog
+* Sun Mar 05 2023 Johan Kok <johan@fedoraproject.org> - 0.23.3-1
+- Bumped to 0.23.3
+
 * Sat Feb 11 2023 Johan Kok <johan@fedoraproject.org> - 0.23.2-1
 - Bumped to 0.23.2
 

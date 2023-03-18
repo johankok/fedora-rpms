@@ -1,5 +1,5 @@
 Name:          yq
-Version:       4.31.2
+Version:       4.32.2
 Release:       1%{?dist}
 Summary:       A portable command-line YAML, JSON, XML, CSV and properties processor
 
@@ -28,6 +28,9 @@ mkdir -p %{buildroot}/%{_mandir}/man1/
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Sat Mar 18 2023 Johan Kok <johan@fedoraproject.org> - 4.32.2-1
+- Bumped to 4.32.2
+
 * Sun Mar 05 2023 Johan Kok <johan@fedoraproject.org> - 4.31.2-1
 - Bumped to 4.31.2
 

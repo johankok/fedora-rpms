@@ -1,5 +1,5 @@
 Name:       grype
-Version:    0.62.3
+Version:    0.63.0
 Release:    1%{?dist}
 Summary:    A vulnerability scanner for container images and filesystems
 
@@ -31,6 +31,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Wed Jun 21 2023 Johan Kok <johan@fedoraproject.org> - 0.63.0-1
+- Bumped to 0.63.0
+
 * Sat Jun 17 2023 Johan Kok <johan@fedoraproject.org> - 0.62.3-1
 - Bumped to 0.62.3
 

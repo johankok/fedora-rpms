@@ -5,7 +5,7 @@ Summary:    Static analysis tool that checks Kubernetes YAML files and Helm char
 
 License:    ASL 2.0
 URL:        https://github.com/stackrox/kube-linter
-Source0:    https://github.com/stackrox/kube-linter/releases/download/%{version}/kube-linter-linux.tar.gz
+Source0:    https://github.com/stackrox/kube-linter/releases/download/v%{version}/kube-linter-linux.tar.gz
 
 %description
 KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.

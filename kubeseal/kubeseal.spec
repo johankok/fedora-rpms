@@ -1,5 +1,5 @@
 Name:       kubeseal
-Version:    0.24.3
+Version:    0.24.4
 Release:    1%{?dist}
 Summary:    CLI tool to encrypt secrets into a SealedSecret resource
 License:    ASL 2.0
@@ -30,6 +30,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Fri Nov 17 2023 Johan Kok <johan@fedoraproject.org> - 0.24.4-1
+- Bumped to 0.24.4
+
 * Fri Nov 03 2023 Johan Kok <johan@fedoraproject.org> - 0.24.3-1
 - Bumped to 0.24.3
 

@@ -1,6 +1,6 @@
 Name:		operator-registry
-Version:	1.36.0
-Release:	2%{?dist}
+Version:	1.37.0
+Release:	1%{?dist}
 Summary:	Operator Registry runs in a cluster to provide operator catalog data to OLM
 
 License:	ASL 2.0
@@ -30,6 +30,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/opm
 
 %changelog
+* Mon Mar 18 2024 Johan Kok <johan@fedoraproject.org> - 1.37.0-1
+- Bumped to 1.37.0
+
 * Wed Jan 31 2024 Johan Kok <johan@fedoraproject.org> - 1.36.0-2
 - Rename the CLI to opm
 

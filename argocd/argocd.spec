@@ -1,11 +1,12 @@
-Name:       argocd
-Version:    2.8.9
-Release:    1%{?dist}
-Summary:    Declarative continuous deployment for Kubernetes
+Name:       	argocd
+Version:    	2.9.9
+Release:    	1%{?dist}
+Summary:    	Declarative continuous deployment for Kubernetes
 
-License:    ASL 2.0
-URL:        https://github.com/argoproj/argo-cd/releases
-Source0:    https://github.com/argoproj/argo-cd/releases/download/v%{version}/argocd-linux-amd64
+License:    	ASL 2.0
+URL:        	https://github.com/argoproj/argo-cd/releases
+Source0:    	https://github.com/argoproj/argo-cd/releases/download/v%{version}/argocd-linux-amd64
+ExclusiveArch:	x86_64
 
 %description
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
@@ -21,6 +22,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Mon Mar 18 2024 Johan Kok <johan@fedoraproject.org> - 2.9.9-1
+- Bumped to 2.9.9
+
 * Sat Jan 20 2024 Johan Kok <johan@fedoraproject.org> - 2.8.9-1
 - Bumped to 2.8.9
 

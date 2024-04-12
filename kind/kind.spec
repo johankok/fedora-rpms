@@ -1,5 +1,5 @@
 Name:       kind
-Version:    0.20.0
+Version:    0.22.0
 Release:    1%{?dist}
 Summary:    Kubernetes IN Docker - local clusters for testing Kubernetes
 
@@ -29,5 +29,8 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Fri Apr 12 2024 Johan Kok <johan@fedoraproject.org> - 0.22.0-1
+- Bumped to 0.22.0
+
 * Sat Dec 23 2023 Johan Kok <johan@fedoraproject.org> - 0.20.0-1
 - Initial import

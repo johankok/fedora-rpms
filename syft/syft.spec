@@ -1,5 +1,5 @@
 Name:       syft
-Version:    0.101.1
+Version:    1.1.1
 Release:    1%{?dist}
 Summary:    CLI tool and library for generating a Software Bill of Materials
 
@@ -30,6 +30,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Fri Apr 12 2024 Johan Kok <johan@fedoraproject.org> - 1.1.1-1
+- Bumped to 1.1.1
+
 * Sat Jan 20 2024 Johan Kok <johan@fedoraproject.org> - 0.101.1-1
 - Bumped to 0.101.1
 

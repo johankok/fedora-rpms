@@ -1,5 +1,5 @@
 Name:          docker-machine-driver-kvm2
-Version:       1.32.0
+Version:       1.33.0
 Release:       1%{?dist}
 Summary:       docker-machine KVM driver v2 for minikube
 
@@ -27,6 +27,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Sat Apr 20 2024 Johan Kok <johan@fedoraproject.org> - 1.33.0-1
+- Bumped to 1.33.0
+
 * Fri Nov 17 2023 Johan Kok <johan@fedoraproject.org> - 1.32.0-1
 - Bumped to 1.32.0
 

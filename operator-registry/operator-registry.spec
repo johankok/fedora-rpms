@@ -1,5 +1,5 @@
 Name:		operator-registry
-Version:	1.39.0
+Version:	1.40.0
 Release:	1%{?dist}
 Summary:	Operator Registry runs in a cluster to provide operator catalog data to OLM
 
@@ -30,6 +30,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/opm
 
 %changelog
+* Mon May 06 2024 Johan Kok <johan@fedoraproject.org> - 1.40.0-1
+- Bumped to 1.40.0
+
 * Fri Apr 12 2024 Johan Kok <johan@fedoraproject.org> - 1.39.0-1
 - Bumped to 1.39.0
 

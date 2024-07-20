@@ -1,5 +1,5 @@
 Name:       operator-sdk
-Version:    1.34.1
+Version:    1.35.0
 Release:    1%{?dist}
 Summary:    SDK for building Kubernetes applications
 
@@ -33,6 +33,9 @@ install -p -m 755 %{SOURCE0} %{buildroot}/%{_bindir}/operator-sdk
 %{_bindir}/operator-sdk
 
 %changelog
+* Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 1.35.0-1
+- Bumped to 1.35.0
+
 * Fri Apr 12 2024 Johan Kok <johan@fedoraproject.org> - 1.34.1-1
 - Bumped to 1.34.1
 

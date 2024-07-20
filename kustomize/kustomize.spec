@@ -1,5 +1,5 @@
 Name:       kustomize
-Version:    5.4.1
+Version:    5.4.3
 Release:    1%{?dist}
 Summary:    Customization of kubernetes YAML configurations
 
@@ -34,6 +34,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 5.4.3-1
+- Bumped to 5.4.3
+
 * Mon May 06 2024 Johan Kok <johan@fedoraproject.org> - 5.4.1-1
 - Bumped to 5.4.1
 

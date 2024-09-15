@@ -31,7 +31,7 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
-* Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 0.80.1-1
+* Sun Sep 15 2024 Johan Kok <johan@fedoraproject.org> - 0.80.1-1
 - Bumped to 0.80.1
 
 * Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 0.79.3-1

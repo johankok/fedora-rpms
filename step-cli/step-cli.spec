@@ -1,7 +1,7 @@
 Name:          step-cli
-Version:       0.27.2
+Version:       0.27.4
 Release:       1%{?dist}
-Summary:       A zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc 
+Summary:       A zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc
 
 License:       ASL 2.0
 URL:           https://github.com/smallstep/cli/releases
@@ -9,9 +9,9 @@ Source0:       https://github.com/smallstep/cli/releases/download/v%{version}/st
 ExclusiveArch: x86_64
 
 %description
-step is an easy-to-use CLI tool for building, operating, and automating Public 
-Key Infrastructure (PKI) systems and workflows. It's the client counterpart to 
-the step-ca online Certificate Authority (CA). You can use it for many common 
+step is an easy-to-use CLI tool for building, operating, and automating Public
+Key Infrastructure (PKI) systems and workflows. It's the client counterpart to
+the step-ca online Certificate Authority (CA). You can use it for many common
 crypto and X.509 operations—either independently, or with an online CA.
 
 %prep
@@ -27,6 +27,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %doc README.md
 
 %changelog
+* Sun Sep 15 2024 Johan Kok <johan@fedoraproject.org> - 0.27.4-1
+- Bumped to 0.27.4
+
 * Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 0.27.2-1
 - Bumped to 0.27.2
 

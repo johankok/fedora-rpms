@@ -36,7 +36,7 @@ install -p -m 755 helm %{buildroot}/%{_bindir}
 * Mon Nov 11 2024 Johan Kok <johan@fedoraproject.org> - 3.16.2-1
 - Bumped to 3.16.2
 
-* Sat Sep 13 2024 Johan Kok <johan@fedoraproject.org> - 3.16.1-1
+* Fri Sep 13 2024 Johan Kok <johan@fedoraproject.org> - 3.16.1-1
 - Bumped to 3.16.1
 
 * Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 3.15.3-1

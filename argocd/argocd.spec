@@ -1,3 +1,6 @@
+%define _build_id_links none
+%global debug_package %{nil}
+
 Name:       	argocd
 Version:    	2.13.0
 Release:    	1%{?dist}

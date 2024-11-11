@@ -1,3 +1,6 @@
+%define _build_id_links none
+%global debug_package %{nil}
+
 Name:       helm
 Version:    3.16.2
 Release:    1%{?dist}
@@ -21,7 +24,6 @@ Requires: bash
 %{gpgverify} --keyring='%{SOURCE2}' --signature='%{SOURCE1}' --data='%{SOURCE0}'
 %setup -q -c -T
 tar --strip-components=1 -zxf %{SOURCE0}
-
 
 %install
 mkdir -p %{buildroot}/%{_bindir}

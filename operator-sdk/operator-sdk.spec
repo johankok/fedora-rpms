@@ -1,5 +1,8 @@
+%define _build_id_links none
+%global debug_package %{nil}
+
 Name:       operator-sdk
-Version:    1.35.0
+Version:    1.37.0
 Release:    1%{?dist}
 Summary:    SDK for building Kubernetes applications
 
@@ -14,7 +17,7 @@ ExclusiveArch: x86_64
 BuildRequires: coreutils gnupg
 
 %description
-SDK for building Kubernetes applications. Provides high level APIs, useful 
+SDK for building Kubernetes applications. Provides high level APIs, useful
 abstractions, and project scaffolding.
 
 %prep
@@ -33,6 +36,9 @@ install -p -m 755 %{SOURCE0} %{buildroot}/%{_bindir}/operator-sdk
 %{_bindir}/operator-sdk
 
 %changelog
+* Tue Nov 12 2024 Johan Kok <johan@fedoraproject.org> - 1.37.0-1
+- Bumped to 1.37.0
+
 * Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 1.35.0-1
 - Bumped to 1.35.0
 

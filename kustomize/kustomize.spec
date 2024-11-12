@@ -1,5 +1,8 @@
+%define _build_id_links none
+%global debug_package %{nil}
+
 Name:       kustomize
-Version:    5.4.3
+Version:    5.5.0
 Release:    1%{?dist}
 Summary:    Customization of kubernetes YAML configurations
 
@@ -12,11 +15,11 @@ ExclusiveArch: x86_64
 BuildRequires: coreutils
 
 %description
-kustomize lets you customize raw, template-free YAML files for multiple 
+kustomize lets you customize raw, template-free YAML files for multiple
 purposes, leaving the original YAML untouched and usable as is.
 
-kustomize targets kubernetes; it understands and can patch kubernetes style 
-API objects. It's like make, in that what it does is declared in a file, and 
+kustomize targets kubernetes; it understands and can patch kubernetes style
+API objects. It's like make, in that what it does is declared in a file, and
 it's like sed, in that it emits edited text.
 
 %prep
@@ -34,6 +37,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Tue Nov 12 2024 Johan Kok <johan@fedoraproject.org> - 5.5.0-1
+- Bumped to 5.5.0
+
 * Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 5.4.3-1
 - Bumped to 5.4.3
 

@@ -1,5 +1,8 @@
+%define _build_id_links none
+%global debug_package %{nil}
+
 Name:		operator-registry
-Version:	1.45.0
+Version:	1.48.0
 Release:	1%{?dist}
 Summary:	Operator Registry runs in a cluster to provide operator catalog data to OLM
 
@@ -12,7 +15,7 @@ ExclusiveArch:	x86_64
 BuildRequires: coreutils
 
 %description
-Operator Registry runs in a Kubernetes or OpenShift cluster to provide operator 
+Operator Registry runs in a Kubernetes or OpenShift cluster to provide operator
 catalog data to Operator Lifecycle Manager.
 
 %prep
@@ -30,6 +33,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/opm
 
 %changelog
+* Tue Nov 12 2024 Johan Kok <johan@fedoraproject.org> - 1.48.0-1
+- Bumped to 1.48.0
+
 * Sat Jul 20 2024 Johan Kok <johan@fedoraproject.org> - 1.45.0-1
 - Bumped to 1.45.0
 

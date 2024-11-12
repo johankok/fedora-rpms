@@ -1,3 +1,6 @@
+%define _build_id_links none
+%global debug_package %{nil}
+
 Name:          minikube
 Version:       1.34.0
 Release:       1%{?dist}

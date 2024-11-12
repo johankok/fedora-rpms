@@ -1,5 +1,8 @@
+%define _build_id_links none
+%global debug_package %{nil}
+
 Name:       grype
-Version:    0.80.1
+Version:    0.84.0
 Release:    1%{?dist}
 Summary:    A vulnerability scanner for container images and filesystems
 
@@ -31,6 +34,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Tue Nov 12 2024 Johan Kok <johan@fedoraproject.org> - 0.84.0-1
+- Bumped to 0.84.0
+
 * Sun Sep 15 2024 Johan Kok <johan@fedoraproject.org> - 0.80.1-1
 - Bumped to 0.80.1
 

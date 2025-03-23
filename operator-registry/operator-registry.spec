@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:		operator-registry
-Version:	1.48.0
+Version:	1.51.0
 Release:	1%{?dist}
 Summary:	Operator Registry runs in a cluster to provide operator catalog data to OLM
 
@@ -33,6 +33,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/opm
 
 %changelog
+* Sun Mar 23 2025 Johan Kok <johan@fedoraproject.org> - 1.51.0-1
+- Bumped to 1.51.0
+
 * Tue Nov 12 2024 Johan Kok <johan@fedoraproject.org> - 1.48.0-1
 - Bumped to 1.48.0
 

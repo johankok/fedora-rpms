@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:          minikube
-Version:       1.34.0
+Version:       1.35.0
 Release:       1%{?dist}
 Summary:       Minikube is a tool that makes it easy to run Kubernetes locally
 
@@ -31,6 +31,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Sun Mar 23 2025 Johan Kok <johan@fedoraproject.org> - 1.35.0-1
+- Bumped to 1.35.0
+
 * Mon Nov 11 2024 Johan Kok <johan@fedoraproject.org> - 1.34.0-1
 - Bumped to 1.34.0
 

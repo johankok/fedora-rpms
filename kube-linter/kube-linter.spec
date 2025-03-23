@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:       kube-linter
-Version:    0.7.1
+Version:    0.7.2
 Release:    1%{?dist}
 Summary:    Static analysis tool that checks Kubernetes YAML files and Helm charts
 
@@ -26,6 +26,9 @@ install -p -m 755 kube-linter %{buildroot}/%{_bindir}
 %{_bindir}/kube-linter
 
 %changelog
+* Sun Mar 23 2025 Johan Kok <johan@fedoraproject.org> - 0.7.2-1
+- Bumped to 0.7.2
+
 * Tue Nov 12 2024 Johan Kok <johan@fedoraproject.org> - 0.7.1-1
 - Bumped to 0.7.1
 

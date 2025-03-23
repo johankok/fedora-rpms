@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:       syft
-Version:    1.16.0
+Version:    1.21.0
 Release:    1%{?dist}
 Summary:    CLI tool and library for generating a Software Bill of Materials
 
@@ -33,6 +33,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Sun Mar 23 2025 Johan Kok <johan@fedoraproject.org> - 1.21.0-1
+- Bumped to 1.21.0
+
 * Tue Nov 12 2024 Johan Kok <johan@fedoraproject.org> - 1.16.0-1
 - Bumped to 1.16.0
 

@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:       	argocd
-Version:    	3.0.5
+Version:    	3.1.0
 Release:    	1%{?dist}
 Summary:    	Declarative continuous deployment for Kubernetes
 
@@ -25,6 +25,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Thu Aug 21 2025 Johan Kok <johan@fedoraproject.org> - 3.1.0-1
+- Bumped to 3.1.0
+
 * Mon Jun 09 2025 Johan Kok <johan@fedoraproject.org> - 3.0.5-1
 - Bumped to 3.0.5
 

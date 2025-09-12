@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:       helm
-Version:    3.18.6
+Version:    3.19.0
 Release:    1%{?dist}
 Summary:    The Kubernetes Package Manager
 
@@ -35,6 +35,9 @@ install -p -m 755 helm %{buildroot}/%{_bindir}
 %{_bindir}/helm
 
 %changelog
+* Fri Sep 12 2025 Johan Kok <johan@fedoraproject.org> - 3.19.0-1
+- Bumped to 3.19.0
+
 * Thu Aug 21 2025 Johan Kok <johan@fedoraproject.org> - 3.18.6-1
 - Bumped to 3.18.6
 

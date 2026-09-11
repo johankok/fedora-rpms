@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:       operator-sdk
-Version:    1.42.0
+Version:    1.42.3
 Release:    1%{?dist}
 Summary:    SDK for building Kubernetes applications
 
@@ -36,6 +36,9 @@ install -p -m 755 %{SOURCE0} %{buildroot}/%{_bindir}/operator-sdk
 %{_bindir}/operator-sdk
 
 %changelog
+* Fri Sep 11 2026 Johan Kok <johan@fedoraproject.org> - 1.42.3-1
+- Bumped to 1.42.3
+
 * Wed Dec 03 2025 Johan Kok <johan@fedoraproject.org> - 1.42.0-1
 - Bumped to 1.42.0
 

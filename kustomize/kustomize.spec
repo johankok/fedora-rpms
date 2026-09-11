@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:       kustomize
-Version:    5.6.0
+Version:    5.8.1
 Release:    1%{?dist}
 Summary:    Customization of kubernetes YAML configurations
 
@@ -37,6 +37,9 @@ mkdir -p %{buildroot}/%{_bindir}
 %{_bindir}/%{name}
 
 %changelog
+* Fri Sep 11 2026 Johan Kok <johan@fedoraproject.org> - 5.8.1-1
+- Bumped to 5.8.1
+
 * Sun Mar 23 2025 Johan Kok <johan@fedoraproject.org> - 5.6.0-1
 - Bumped to 5.6.0
 
